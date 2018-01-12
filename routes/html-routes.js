@@ -8,18 +8,18 @@ var path = require("path");
 // =============================================================
 module.exports = function(app) {
   // Each of the below routes just handles the HTML page that the user gets sent to.
-  // index route loads index.html
+  // landing route loads landing.html
   app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/index.html"));
+    res.sendFile(path.join(__dirname, "../public/landing.html"));
   });
-  // add route loads the add.html page,
+  // add route loads the report.html page,
   // where users can enter new encounters to the db
-  app.get("/add", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/add.html"));
+  app.get("/report", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/report.html"));
   });
-  // all route loads the all.html page,
-  // where all encounters in the db are displayed
-  app.get("/all", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/results.html"));
+ 
+  // displays encounters searcg
+  app.get("/search", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/search.html"));
   });
 };
