@@ -42,11 +42,15 @@ body {
 }
 
 .carousel-item {
-  height: 545px; }
+  height: 590px;
+  font-family: 'Ranga', cursive;
+  color: pink;
+   }
 
 .carousel-image-1 {
   /*background: url("../images/image1.png");*/
-  background-size: cover; }
+  background-size: cover; 
+  }
 
 .carousel-image-2 {
   /*background: url("../images/image2.jpg");*/
@@ -62,7 +66,7 @@ footer {
     bottom: 0;*/
 	 margin: 40px 0 0 0;
     width: 100%;
-    background-color: darkgrey;
+    /*background-color: darkgrey;*/
     color: black;
     text-align: center;
     font-size: 15px;
